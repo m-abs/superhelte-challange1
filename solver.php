@@ -1,5 +1,5 @@
 <?php
-$lab = file_get_contents( "test.txt" );
+$lab = file_get_contents( "TextFile2.txt" );
 
 $matrix = array();
 $len = strlen( $lab );
@@ -25,7 +25,7 @@ for ( $i = 0; $i < $len; $i += 1 ) {
 	$x += 1;
 }
 
-// echo $startX . "\n";
+echo $startX . "\n";
 
 $res = array(
 	"d"
@@ -35,7 +35,7 @@ $curX = $startX;
 $curY = 0;
 while ( true ) {
 	$c = $matrix[ $curX ][ $curY ];	
-	//echo "{$curX},{$curY} = {$c}\n";
+	echo "{$curX},{$curY} = {$c}\n";
 
 	// print_r( $res );
 	
